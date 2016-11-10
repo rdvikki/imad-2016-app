@@ -15,6 +15,7 @@ app.get('/article1', function (req,res){
 app.get('/article2', function(req, res){
     res.send('Your request for article 2 is shown here');
 });
+
 app.get('/article2', function(req, res){
     res.send('Your request for article 2 is shown here');
 });
