@@ -4,13 +4,60 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+ 
+var artileOne={
+    title:'Web App | Vigneshwari',
+    heading:'Article One',
+    date:'Sep 5 2016',
+    content:` <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+               <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+               <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>`
+};
+function createTemplate(data)
+{
+var title=data.title;
+var heading=data.heading;
+var date=data.date;
+var content=data.content;
 
+var htmlTemplate=`<!DOCTYPE html>
+<html>
+<head>
+<title>${title}</title>
+<meta name="viewport" content="width-device-width" initial scale="1">
+<link href="/ui/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div>
+            <a href='/'>Home</a>
+        </div>
+        <hr/>
+          <h1>${heading}</h1>
+          <div>${date}</div> 
+          <div>
+              ${content}
+          </div>    
+          </div>
+</body>
+</html>`;
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article1', function (req, res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 app.get('/article2', function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
