@@ -103,8 +103,19 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+// create the pool somewhere globally so its lifetime
+// lasts for as long as your app is running
+
+var pool = new Pool(config); 
 app.get('/test-db', function(req,res){
-    
+pool.query('SELECT * FROM test', function (err,result){
+if(err){
+    send.status(500).send(err.toString());
+}
+    else{
+        res.send(JSON.stringify(result));
+    }
+});
 });
 
 app.get('/:articleName', function (req, res){
