@@ -16,8 +16,7 @@ button.onclick = function () {
             };
    
 //submit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit-btn');
 submit.onclick = function(){
     
@@ -39,6 +38,8 @@ submit.onclick = function(){
                       }
                 
                 };
+                var nameInput = document.getElementById('name');
+                var name = nameInput.value;
                 request.open('Get','http://rdvikki.imad.hasura-app.io/submit-name?name=' + name,true);
                 request.send(null);
 
