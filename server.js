@@ -113,7 +113,7 @@ if(err){
     send.status(500).send(err.toString());
 }
     else{
-        res.send(JSON.stringify(result.row));
+        res.send(JSON.stringify(result.rows));
     }
 });
 });
