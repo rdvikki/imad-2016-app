@@ -1,8 +1,6 @@
-console.log('Loaded!');
 var button = document.getElementById('counter');
-var counter=0;
 //creating a request object
-button.onclick=function(){
+button.onclick = function () {
     var request = new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.Done && request.status===200){
@@ -15,7 +13,7 @@ button.onclick=function(){
     };
     //making a request
     
-    request.open('Get','http://rdvikki.imad.hasura-app.io',true);
+    request.open('Get','http://rdvikki.imad.hasura-app.io/counter',true);
    request.send(null);
     
     
