@@ -81,11 +81,6 @@ app.get('/counter', function(req,res)
     res.send(counter.toString());
 });
 
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
 var names=[];
 app.get('/submit-name/:name', function(req,res){
     var name = req.query.name;
@@ -94,6 +89,11 @@ app.get('/submit-name/:name', function(req,res){
     
     
 });
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+
 
 app.get('/:articleName', function (req, res){
     articleName=req.params.articleName;
