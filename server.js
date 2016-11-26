@@ -84,6 +84,10 @@ var htmlTemplate=`<!DOCTYPE html>
 return htmlTemplate;
 }
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 
 // create the pool somewhere globally so its lifetime
 // lasts for as long as your app is running
@@ -116,9 +120,7 @@ app.get('/submit-name', function(req,res){
  });
 
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+
 
 
 
