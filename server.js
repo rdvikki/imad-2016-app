@@ -117,15 +117,15 @@ app.get('/:articleName', function (req, res){
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-app.get('/ui/1S.jpg'),function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', '1S.jpg'));
-};
-app.get('/ui/2S.jpg'),function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', '2S.jpg'));
-};
-app.get('/ui/3S.jpg'),function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', '3S.jpg'));
-};
+app.get('/ui/1S.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '1S.png'));
+});
+app.get('/ui/2S.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '2S.png'));
+});
+app.get('/ui/3S.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '3S.png'));
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
