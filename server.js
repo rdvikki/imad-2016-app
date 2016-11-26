@@ -117,20 +117,20 @@ app.get('/:articleName', function (req, res){
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-app.get('ui/bootstrap.css', function (req,res){
+app.get('/ui/bootstrap.css', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','bootstrap.css'));
 });
-app.get('ui/contact.htm', function (req,res){
+app.get('/ui/contact.htm', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','contact.htm'));
 });
 
-app.get('ui/bootstrap.js', function (req,res){
+app.get('/ui/bootstrap.js', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','bootstrap.js'));
 });
-app.get('ui/docs.css', function (req,res){
+app.get('/ui/docs.css', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','docs.css'));
 });
-app.get('ui/jquery.js', function (req,res){
+app.get('/ui/jquery.js', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','jquery.js'));
 });
 app.get('/ui/1S.jpg', function (req, res) {
