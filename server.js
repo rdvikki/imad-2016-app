@@ -117,6 +117,15 @@ app.get('/:articleName', function (req, res){
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+app.get('/bootstrap.css', function (req,res){
+    res.sendFile(path.join(_dirname, 'ui','bootstrap.css'));
+});
+app.get('/docs.css', function (req,res){
+    res.sendFile(path.join(_dirname, 'ui','docs.css'));
+});
+app.get('/jquery.js', function (req,res){
+    res.sendFile(path.join(_dirname, 'ui','jquery.js'));
+});
 app.get('/ui/1S.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '1S.jpg'));
 });
