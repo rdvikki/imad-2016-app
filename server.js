@@ -120,8 +120,8 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/bootstrap.css', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','bootstrap.css'));
 });
-app.get('/ui/About me.html', function (req,res){
-    res.sendFile(path.join(_dirname, 'ui','About me.html'));
+app.get('/ui/About.html', function (req,res){
+    res.sendFile(path.join(_dirname, 'ui','About.html'));
 });
 
 app.get('/ui/bootstrap.js', function (req,res){
