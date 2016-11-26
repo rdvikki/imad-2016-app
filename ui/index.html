@@ -1,192 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="This is my test web app created for IMAD">
-        <meta name="author" content="Vigneshwari Ramakrishnan">
-        <link rel="icon" href="../../favicon.ico">
-        
-        <title>Vigneshwari Ramakrishnan's WebApp</title>
-         <!-- Bootstrap core CSS -->
-        
-        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-        <link href="/ui/style.css" rel="stylesheet" />
-        <!-- Added Bootstrap files for Bootstrap functionality - Vigneshwari Ramakrishnan, Nov 2016 -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="carousel.css" rel="stylesheet">
-        <link href="docs.css" rel="stylesheet" />  
-    </head>
-
- 
-
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel slide" id="carousel-503131">
-                    <ol class="carousel-indicators">
-                        <li class="active" data-slide-to="0" data-target="#carousel-503131"></li>
-                        <li data-slide-to="1" data-target="#carousel-503131"></li>
-                        <li data-slide-to="2" data-target="#carousel-503131"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img alt="" src="/1S.jpg" />
-                        </div>
-                        <div class="item">
-                            <img alt="" src="2S.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img alt="" src="3S.jpg">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is my test web app created for IMAD">
+    <meta name="author" content="Vigneshwari Ramakrishnan">
+    <link rel="icon" href="../../favicon.ico">
+    
+    <title>Vigneshwari Ramakrishnan's WebApp</title>
+     <!-- Bootstrap core CSS -->
+    
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="/ui/style.css" rel="stylesheet" />
+    <!-- Added Bootstrap files for Bootstrap functionality - Vigneshwari Ramakrishnan, Nov 2016 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="carousel.css" rel="stylesheet">
+    <link href="docs.css" rel="stylesheet" />  
+</head>
+<body style="background-image: url(Asset/Image/gray_fabric.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 column" style="height: 50px;">
+                <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation" style="z-index: 9999;">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="default.aspx">Suvadi Techno Solutions</a>
                     </div>
-                    <a class="left carousel-control" href="#carousel-503131" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#carousel-503131" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="default.aspx">Home</a></li>
+                            <li><a href="Contact.aspx">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel slide" id="carousel-503131">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#carousel-503131"></li>
+                            <li data-slide-to="1" data-target="#carousel-503131"></li>
+                            <li data-slide-to="2" data-target="#carousel-503131"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img alt="" src="asset/Image/Carousel/1S.jpg" />
+
+                                <!--<div class="carousel-caption">
+                                    <h4>
+                                        First Thumbnail label
+                                    </h4>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+                                </div>-->
+                            </div>
+                            <div class="item">
+                                <img alt="" src="Asset/Image/Carousel/2S.jpg">
+                                <div class="carousel-caption">
+                                    <!--<h4>
+                                        Second Thumbnail label
+                                    </h4>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>-->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img alt="" src="Asset/Image/Carousel/3S.jpg">
+                                <div class="carousel-caption">
+                                    <!--<h4>
+                                        Second Thumbnail label
+                                    </h4>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-503131" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#carousel-503131" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div>
+            <br />
+            <p class="text-justify">Suvadi is a social contribution platform founded for the purpose of enabling recognition of young talents to be guided, enabled leading to their success, industrial growth, IP reaping and more! Thanks to all Professionals, Subject matter experts (SME) and industry experts with years of wide experience who volunteer, enjoy making the next generation grow to higher success and being the pillars of this initiative!
+            <br /></p>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-4 column">
+                <h2>Research & innovation</h2>
+
+                <p class="text-justify">
+                    Team of dedicated excellent professionals filled with high caliber and aspirations creating state-of-art techno solutions in the field of aeronautics, automotive, bio-medical, health-care, information security, automation, banking, embedded, IP and many more challenging domains. 
+                </p>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
+            </div>
+            <div class="col-md-4 column">
+                <h2>Techno solutions</h2>
+                <p class="text-justify">
+                    Backed by excellent in-house research and innovation, perfect, cost-effective techno solution across wide range of technology spectrum including density packed embedded, secure enterprise frameworks, satellite based tracking, centralized health monitoring assures right solutions for all your technology needs.  
+                </p>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
+            </div>
+            <div class="col-md-4 column">
+                <h2>Capability building</h2>
+
+                <p class="text-justify">
+                    Right capability is the key to success along with research, innovation and techno solutions. Our customized capability building programs and e-learning solutions across various technical, non-technical stacks and domains provides assured, effective capabilities all the time. 
+                </p>
+                <p>
+                    <a class="btn" href="#">View details »</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar-inverse text-muted navbar-fixed-bottom" style="height: 20px;">
+                Copyright © Vigneshwari_Ramakrishnan (P) Ltd., 2016, All rights reserved.
+            </div>
+        </div>
+
     </div>
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    
-  </body>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="docs.js"></script>
+</body>
 </html>
