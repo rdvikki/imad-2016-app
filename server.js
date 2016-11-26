@@ -82,6 +82,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
 //create the pool somewhere globally so its lifetime
 // lasts for as long as your app is running
 //var pool = new Pool(config); 
@@ -119,6 +120,9 @@ app.get('/ui/main.js', function (req, res) {
 });
 app.get('/ui/bootstrap.css', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','bootstrap.css'));
+});
+app.get('/ui/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/ui/About.html', function (req,res){
     res.sendFile(path.join(_dirname, 'ui','About.html'));
